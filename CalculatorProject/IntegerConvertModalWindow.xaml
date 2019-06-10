@@ -1,0 +1,32 @@
+﻿<Window x:Class="CalculatorProject.IntegerConvertModalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorProject"
+        mc:Ignorable="d"
+        Title="IntegerConvertModalWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Margin="31,46,-11,308" FontSize="25" RenderTransformOrigin="0.656,2.087">Convert an integer number to hexadecimal, octal and binary</TextBlock>
+
+        <ComboBox Margin="501,154,0,0" Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" RenderTransformOrigin="0.619,2.49" SelectionChanged="ComboBox1_SelectionChanged" FontSize="30">
+            <ComboBoxItem Content="Hexadecimal"></ComboBoxItem>
+            <ComboBoxItem Content="Octal"></ComboBoxItem>
+            <ComboBoxItem Content="Binary"></ComboBoxItem>
+        </ComboBox>
+
+        <TextBox x:Name="Number" Height="60" FontSize="30" HorizontalAlignment="Left" Margin="196,154,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.813,0.521" />
+
+        <Label FontSize="19" Content="Provide Integer:" Height="60" HorizontalAlignment="Left" Margin="31,163,0,0" Name="label1" VerticalAlignment="Top" RenderTransformOrigin="1.698,2.652" Width="144" />
+
+        <TextBlock Margin="389,163,253,205" FontSize="30" RenderTransformOrigin="0.656,2.087">To</TextBlock>
+
+        <Button Margin="343,237,316,131" FontSize="30" RenderTransformOrigin="0.656,2.087" Click="Button_Click_3" >Convert</Button>
+
+
+        <TextBlock Margin="47,313,593,39" FontSize="45" RenderTransformOrigin="0.656,2.087" Text="Result:"/>
+
+        <TextBlock Name="txtResult" Text="" FontSize="45" Margin="232,307,91,45" RenderTransformOrigin="0.5,0.5" ></TextBlock>
+
+    </Grid>
+</Window>
